@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> Default Sorting</h1>
+<ul>
+    {% for event in event_list %}
+        <p>{{ event.title}}</p>
+    {% endfor %}
+</ul>
+{% endblock content %}
